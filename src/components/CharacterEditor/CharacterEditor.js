@@ -31,50 +31,52 @@ function App() {
   return (
     <main className={styles.characterEditor}>
       <MaxWidthWrapper className={styles.maxWidthWrapper}>
-        <header className={styles.header}>
-          <h1 className={styles.title}>Create your Character</h1>
-          <p className={styles.description}>
-            Customize your character's look and style using the
-            controls below. What sort of adventure will you embark on?{' '}
-          </p>
-        </header>
-        <div className={styles.controlColumn}>
-          <ControlPane
-            title="Bodies"
-            options={bodyOptions}
-            currentOption={body}
-            handleSelectOption={setBody}
-          />
-          <ControlPane
-            title="Heads"
-            options={headOptions}
-            currentOption={head}
-            handleSelectOption={setHead}
-          />
-          <ControlPane
-            title="Faces"
-            options={faceOptions}
-            currentOption={face}
-            handleSelectOption={setFace}
-          />
-          <ControlPane
-            title="Accessories"
-            options={accessoryOptions}
-            currentOption={accessory}
-            handleSelectOption={setAccessory}
-          />
-          <ControlPane
-            title="Skin Color"
-            options={skinColorOptions}
-            currentOption={skinColor}
-            handleSelectOption={setSkinColor}
-          />
-          <ControlPane
-            title="Clothing Color"
-            options={clothesColorOptions}
-            currentOption={clothesColor}
-            handleSelectOption={setClothesColor}
-          />
+        <div>
+          <header className={styles.header}>
+            <h1 className={styles.title}>Create your Character</h1>
+            <p className={styles.description}>
+              Customize your character's look and style using the
+              controls below. What sort of adventure will you embark on?{' '}
+            </p>
+          </header>
+          <div className={styles.controlColumn}>
+            <ControlPane
+              title="Bodies"
+              options={bodyOptions}
+              currentOption={body}
+              handleSelectOption={setBody}
+            />
+            <ControlPane
+              title="Heads"
+              options={headOptions}
+              currentOption={head}
+              handleSelectOption={setHead}
+            />
+            <ControlPane
+              title="Faces"
+              options={faceOptions}
+              currentOption={face}
+              handleSelectOption={setFace}
+            />
+            <ControlPane
+              title="Accessories"
+              options={accessoryOptions}
+              currentOption={accessory}
+              handleSelectOption={setAccessory}
+            />
+            <ControlPane
+              title="Skin Color"
+              options={skinColorOptions}
+              currentOption={skinColor}
+              handleSelectOption={setSkinColor}
+            />
+            <ControlPane
+              title="Clothing Color"
+              options={clothesColorOptions}
+              currentOption={clothesColor}
+              handleSelectOption={setClothesColor}
+            />
+          </div>
         </div>
       </MaxWidthWrapper>
 

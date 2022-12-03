@@ -4,5 +4,9 @@
   background: hsl(0deg, 0%, 5%);
   color: white;
   text-align: center;
+  isolation: isolate;
 }
 
+.footer a, .footer a:visited, .footer a:hover, .footer a:active {
+  color: white;
+}
